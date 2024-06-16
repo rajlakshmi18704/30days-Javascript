@@ -1,0 +1,120 @@
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  height: 100%;
+  width: 100%;
+  background-color: #10101D;
+  font-family:  Arial, sans-serif;
+}
+.main-div{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 130px 55px;
+}
+h1{
+  color: white;
+}
+.input-box{
+  background-color: #10101D;
+display: flex;
+width: 50%;;
+height:40% ;
+text-align: center;
+align-items: center;
+margin: 2rem 4rem;
+justify-content: center;
+border-radius:20px ;
+}
+.input-box input{
+  
+display: flex;
+justify-content: center;
+align-items: center;
+flex: 1;
+font-family:  Arial, sans-serif;
+text-align: center;
+font-size: 2rem;
+align-items: center;
+border: none;
+margin-left: 25px;
+height: 3vmax;
+outline: none;
+}
+
+.input-box button{
+  margin: 1.5vmax 0.8vmax;
+height: 3vmax;
+width: 3vmax;
+font-weight: 600;
+font-size: 2rem;
+background-color: #EE9CA7;
+}
+.big-div{
+ 
+  display: flex;
+position: relative;
+height:60px ;
+width: 700px;
+
+margin: 2rem 2rem;
+
+align-items: center;
+background-color: #191933;
+font-size: 25px;
+
+
+}
+.addedTask{
+  color: white;
+  font-family: inherit;
+  text-align: center;
+justify-content: center;
+align-items: center;
+}
+
+.completed-btn{
+ 
+margin: 0 15px;
+  font-size: 30px;
+  font-weight: bold;
+  width: 2vmax;
+  height: 2vmax;
+  text-align: center;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  /* border: 4px solid black; */
+  border-radius: 1.5vmax;
+  background-color: white;
+
+}
+
+.delbtn{
+  width: 2vmax;
+  height: 2vmax;
+background-color: rgb(104, 26, 193);
+border-radius: 1.5vmax;
+;
+align-items: center;
+justify-content: center;
+border: none;
+position: absolute;
+font-weight: bold;
+ font-size: 24px;
+ right: 40px;
+}
+.js-completed{
+  color:#606060; 
+  text-decoration:line-through;
+}
+.style-btn{
+  display: flex;
+  background-color: #EE9CA7;
+}
