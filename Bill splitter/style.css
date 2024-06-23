@@ -1,0 +1,153 @@
+
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+.main-container{
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-family: inherit;
+}
+.firstdiv {
+  display: flex;
+  flex-direction: column;
+}
+.firstdiv p{
+ margin-top: 8px;
+
+ font-family: inherit;
+ font-size: 1.2vmax;
+ font-weight: 400;
+}
+.button-div{
+display: grid;
+grid-template-columns: 7vmax  7vmax 7vmax;
+
+gap: 0.4vmax;
+ 
+}
+.button-div button{
+  background-color: blueviolet;
+  border: none;
+  color: white;
+margin-top: 1vmax ;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 2.5vmax;
+  width: 5vmax;
+  text-align: center;
+  border-radius: 0.4vmax;
+  
+}
+.button-div  .selected{
+ outline: 4px solid orange;
+}
+.firstdiv p{
+  color: blueviolet;
+}
+.firstdiv{
+  margin: 14px;
+}
+input{
+padding-left: 6px;
+  margin-top: 2vmax;
+  outline: none;
+font-size: 1.3vmax;
+  width: 20vmax;
+  height: 2.5vmax;
+  font-family: Arial, Helvetica, sans-serif;
+  color: blueviolet;
+  max-width: 30vmax;
+  border-radius: 0.5vmax;
+  text-align :start;
+}
+.input-container{
+  width: 100%;
+}
+.custom-tip,.noofpeople{
+  background-color: rgba(128, 128, 128, 0.362);
+  outline: none;
+  border: none;
+  
+}
+input:disabled{
+  cursor: not-allowed;
+}
+.button-div.disabled{
+
+  opacity: 0.6;
+}
+.button-div.disabled button{
+  cursor: not-allowed;
+}
+.bill-generate{
+  width: 20vmax;
+  background-color: blueviolet;
+  margin: 1.5vmax 0;
+  border: none;
+  height: 2.8vmax;
+  border-radius: 0.6vmax;
+  color: white;
+}
+.bill-generate:disabled{
+ opacity: 0.6;;
+  cursor: not-allowed;
+}
+
+
+
+.seconddiv{
+  margin-top: 0;
+  background-color: darkblue;
+  height: 23vmax;
+  width: 30vmax;
+  color: white;
+  padding: 2vmax 1.5vmax;
+  border-radius: 1vmax;
+  position: relative;
+}
+.seconddiv button{
+  position: absolute;
+width: 90%;
+  height: 2.8vmax;
+  border-radius: 0.5vmax;
+  bottom: 1vmax;
+  border: none;
+  font-family: inherit;
+  font-weight: 500;
+}
+.seconddiv p{
+  margin: 3vmax  0;
+
+}
+span{
+position: absolute
+;
+color: blueviolet;
+right: 1vmax;
+
+}
+.input-container{
+  display: flex;
+  ;
+}
+.input-container span{
+  color: blueviolet;
+}
+.reset{
+  /* cursor: not-allowed; */
+  cursor: pointer;
+}
+@media (max-width:700px) {
+
+
+  
+}
