@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+     font-family:  Arial, sans-serif; 
+   
+    }
+    .div{
+      position: absolute;
+      margin: 0 30vmax;
+
+    }
+.main-div{
+  height: 500px;
+  width: 500px;
+  background-color: blue;
+  margin: 30px;
+ 
+}
+input{
+ margin: 1vmin 30px;
+ height: 1.5vmax;
+ width: 16vmax;
+ font-family:Arial, sans-serif ;
+ font-size: 1rem;
+ text-align: center;
+}
+label{
+ margin-left:  3rem;
+ margin-top: 1rem;
+  text-align: center;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+h1{ margin: 4vmin;
+font-size: 1.5rem;
+text-align: center;}
+  </style>
+</head>
+<body>
+  <div class="div"> 
+    <label  for="color">Enter The Color</label><input class="color" id="color"/>
+    <div class="main-div"></div>
+    <h1 class="head">Background color is blue</h1></div>
+
+
+ 
+ <script>
+  document.querySelector('.color').addEventListener('keyup',(e)=>{
+   
+  const a=  document.querySelector('.main-div')
+  a.style.backgroundColor=`${e.target.value}`
+  document.querySelector('.head').innerHTML=` Background color is ${e.target.value}`
+    
+  })
+ 
+   
+   
+
+ </script>
+</body>
+</html>
