@@ -1,0 +1,67 @@
+*{
+  box-sizing: border-box;
+
+}
+body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+ 
+  text-align: center;
+ 
+  font-family: sans-serif;
+
+  background-color: rgb(21, 207, 105);
+}
+h1{
+  margin: 2vmax auto;
+  font-family: inherit;
+  color: white;
+  font-size: 2vmax;
+  margin-bottom: 1vmax;
+}
+.main{
+  
+}
+.inputBox{
+
+  align-items: center;
+justify-content: center;
+margin: 4vmax 34vmax;
+max-width: 30vmax;
+display: flex;
+flex-wrap: wrap;
+
+}
+ button{
+
+
+  height: 6vmax;
+  width: 6vmax;
+  margin: 1vmax 1.8vmax;
+  outline: none;
+  color: rgb(15, 205, 116);
+  border: 2px solid rgb(3, 3, 5);
+  font-family: inherit;
+  font-size: 2vmax;
+  border-radius: 1vmax;
+  text-align: center;
+  font-weight: 700;
+  background-color: rgba(12, 98, 91, 0.781);
+}
+.reset-btn button{
+  height: 4vmax;
+  width: 12vmax;
+  background-color: black;
+  font-family: inherit;
+  font-size: 1vmax;
+  border-radius: 1vmax;
+  text-align: center;
+  font-weight: 500;
+  background-color: rgba(22, 12, 98, 0.781);
+  display: inline;
+}
+.hide{
+  display: none;
+}
