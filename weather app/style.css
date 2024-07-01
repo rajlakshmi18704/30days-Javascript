@@ -1,0 +1,187 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+display: flex;
+position: relative;
+background-color: black;
+font-family: sans-serif;
+ 
+}
+.main-container{
+  position: absolute;
+  top: 0;
+height: 40vmax;
+width: 30vmax;
+background-color: white;
+margin-top: 3vmax;
+  display: flex;
+  flex-direction: column;
+  font-family: inherit;
+ 
+
+ border-radius: 2vmax;
+}
+.header{
+  margin: 2vmax 4vmax;
+  
+width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vmax;
+  background-color:  white;
+}
+.header input{
+  margin-left: 4px;
+ height: 8vh;
+  outline: none;
+  width: 60vh;
+  border: none;
+  text-align: center;
+  color: black;
+  font-family: inherit;
+  font-size: 1vw;
+  background-color: #c1d6fca7;
+  border-radius: 1vmax;
+  text-align: left;
+  padding-left: 1vmax;
+}
+.header input ::placeholder{
+  color: black;
+  text-align: left;
+}
+.header button{
+  margin-left: 4px;
+  border: none;
+  border-radius: 1.5vmax;
+  margin-right: 6px;
+  height: 8vh;
+  width: 12vh;
+  text-align: center;
+ 
+  background-color: #c1d6fcb3;
+}
+ button :hover{
+  height: 40%;
+  cursor: pointer;
+  background-color: cadetblue;
+}
+.weather-container{
+  margin-top: 19px;
+  width: 100%;
+ height: 14vmax;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: inherit;
+}
+.weather-container img{
+height: 90%;
+display: flex;
+justify-content: center;
+align-items: center;
+object-fit: contain;
+width: 70%;
+
+
+}
+.main-container .temperature{
+  margin-top: 1vmax;
+  font-size: 2rem;
+  font-weight: 900;
+}
+.temperature{
+  position: relative;
+
+}
+.temperature sup{
+    position: absolute;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.main-container  .weather-txt{
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.weather-text{
+  height: 30vmax;
+  display: block;
+  display: none;
+  justify-content: center;
+ 
+  align-items: center;
+  flex-direction: column;
+}
+.humid-wind{
+  margin-top: 4vmax;
+  display: flex;
+  width: 100%;
+  padding: 0 2vmax;
+  align-items: center;
+  justify-content: space-between;
+}
+.wind-icon{
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+.wind-icon span ,.humidity span{
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+.humidity ,.wind{
+  text-align: center;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+.humidity img{
+  height: 4vmax;
+}
+.humid-text ,.wind-txt
+  
+{
+  display: flex;
+  flex-direction: column;
+}
+.wind div{
+  font-weight: bold;
+}
+.humidity  p,.wind p{
+margin-top: 0.3vmax;
+font-weight: 400;
+ 
+}
+.wind p{
+  margin-left: 1vmax;
+}
+.location-not-found{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+.location-not-found h1{
+  font-size: 18px;
+  color: grey;
+  margin-block-end: 13px;
+}
+.location-not-found img{
+  height: 95%;
+display: flex;
+justify-content: center;
+align-items: center;
+object-fit: contain;
+width: 70%;
+
+}
