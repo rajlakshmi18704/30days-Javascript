@@ -1,0 +1,102 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-block: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header{
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+}
+header h1{
+  color: #767676;
+}
+header form .search-container{
+  margin-top: 20px;
+  position: relative;
+}
+header form .search-container input{
+  width: 100%;
+  font-size: 18px;
+  padding: 12px 24px;
+  border: none;
+  background: #eee;
+  border-radius: 20px;
+  outline: none;
+}
+header form .search-container .magniglass{
+position: absolute;
+
+right: 10px;
+bottom: 12px;
+color: #767676;
+}
+.image-container{
+  margin-block: 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.image-container img{
+  width: 300px;
+  height: 280px;
+}
+.image-container .imageHTML{
+  position: relative;
+}
+ .imageHTML .overlay{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0,0.7);
+transition: height 0.3s ease;
+}
+.imageHTML .overlay h3{
+  color: #fff;
+  display: none;
+  text-align: center;
+  font-size: 20px;
+}
+.imageHTML:hover .overlay h3{
+  color: #fff;
+  display: flex;
+}
+.imageHTML:hover .overlay{
+height: 100%;
+}
+.loadMore{
+  border: none;
+  background-color: #0000ff;
+  color: white;
+  font-size: 20px;
+  font-weight: 800;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+}
+main section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0 50px 0;
+}
+@media screen and (max-width:920px) {
+  
+}
